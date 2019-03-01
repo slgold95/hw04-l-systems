@@ -196,7 +196,6 @@ void main() {
 
 //------------------------------------------------------------------------------------------------
     float x = sin(float(u_Time*.00085));// an oscilating value for day/night cycle
-//--------------------------------------------------------------------------------------------------
 
     // use a fbm to generate a "random" hieght field value
     float heightField = fbm(uv + vec2(float(u_Time * 0.001)));
