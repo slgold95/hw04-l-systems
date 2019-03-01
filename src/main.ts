@@ -135,12 +135,14 @@ function loadScene() {
   leaf.create();
   
   // Pot Mesh
-  let obj0: string = readTextFile("https://raw.githubusercontent.com/slgold95/hw04-l-systems/master/src/geometry/pot.obj");
+  let obj0: string = readTextFile('./src/geometry/pot.obj');
+  //let obj0: string = readTextFile("https://raw.githubusercontent.com/slgold95/hw04-l-systems/master/src/geometry/pot.obj");
   pot = new Mesh(obj0, vec3.fromValues(0.0, 0.0, 0.0));
   pot.create(); 
 
   // Cylinder Mesh
-  let obj1: string = readTextFile("http://raw.githubUsercontent.com/slgold95/hw04-l-systems/master/src/geometry/cylinder.obj");
+  let obj1: string = readTextFile('./src/geometry/cylinder.obj');
+  //let obj1: string = readTextFile("http://raw.githubUsercontent.com/slgold95/hw04-l-systems/master/src/geometry/cylinder.obj");
   cylinder = new Mesh(obj1, vec3.fromValues(0.0, 0.0, 0.0));
   cylinder.create(); 
     
